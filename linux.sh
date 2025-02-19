@@ -90,7 +90,7 @@ case $choice in
         ;;
     11)
         echo "正在换源"
-        curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh -o main.sh && chmod +x main.sh && ./main.sh
+        curl -sSL https://raw.githubusercontent.com/Utuobw/Linux-toolbox/main/ChangeMirrors.sh -o main.sh && chmod +x main.sh && ./main.sh
         ;;
     12)
         echo "正在换源"
