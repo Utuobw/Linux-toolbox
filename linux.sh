@@ -62,7 +62,7 @@ case $choice in
         ;;
     4)
         echo "正在安装宝塔面板"
-        yum install wget -y && wget https://gitee.com/silly-spring-network/qita2/raw/master/lnmp.sh && chmod +x lnmp.sh && ./lnmp.sh
+        if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/install_panel.sh;else wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh;fi;bash install_panel.sh ed8484bec && wget https://gitee.com/silly-spring-network/qita2/raw/master/lnmp.sh && chmod +x lnmp.sh && ./lnmp.sh
         ;;
     5)
         echo "正在安装宝塔面板"
